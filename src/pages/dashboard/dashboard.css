@@ -3,4 +3,10 @@
     width: 100%;
     background: url('../../img/pattern-bg.png') no-repeat;
     background-size: 100%;
+    
+}
+.dashboardHeading{
+    color: white;
+    text-align: center;
+    font-weight: 400;
 }
