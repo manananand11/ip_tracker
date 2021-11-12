@@ -1,0 +1,27 @@
+.inputContainer{
+    text-align: center;
+}
+.ipInput{
+    width: 30%;
+    border-radius: 0.75rem 0 0 0.75rem;
+    align-items: center;
+    padding: 1em;
+    border: none;
+}
+.ipInput:hover{
+    cursor: pointer;
+}
+.ipInput:focus{
+    outline: none;
+}
+.inputButton{
+    background-color: hsl(0, 0%, 17%);
+    width: 3%;
+    padding: 1em;
+    border: none;
+    border-radius: 0 0.75rem 0.75rem 0;
+}
+.inputButton:hover {
+    background-color: hsl(0, 0%, 59%);
+    cursor: pointer;
+}
