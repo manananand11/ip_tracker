@@ -1,0 +1,6 @@
+.dashboardContainer{
+    height: 38vh;
+    width: 100%;
+    background: url('../../img/pattern-bg.png') no-repeat;
+    background-size: 100%;
+}
