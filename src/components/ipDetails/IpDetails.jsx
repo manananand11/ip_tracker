@@ -2,8 +2,7 @@ import React from 'react'
 import './ipDetails.css'
 
 export default function IpDetails(props) {
-    console.log("props " + props.ipDetails?.ip)
-    // console.log(props.ipDetails + "idk") ;
+   
     return (
 
         props.ipDetails ? (

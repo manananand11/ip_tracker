@@ -23,10 +23,10 @@ export default function IpSearch(props) {
                 var string = JSON.parse(str);
                 setIpDetails(string);
                 props.setSearchIpDetails(string);
-                console.log("lol" + ipDetails)
+                
             });
 
-            console.log("start" + ipDetails + " end")
+            
         }).end();
     }, [props.inputIp]);
     return (
