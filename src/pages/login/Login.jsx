@@ -1,8 +1,8 @@
 
 import React, { useEffect } from 'react'
 import Sawo from 'sawo'
-// const dotenv =require('dotenv')
-// dotenv.config()
+const dotenv =require('dotenv')
+dotenv.config()
 
 const Login = (props) => {
    

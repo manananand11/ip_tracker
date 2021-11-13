@@ -3,6 +3,7 @@ import IpDetails from '../ipDetails/IpDetails'
 import './ipSearch.css'
 import React, { useState, useEffect } from 'react';
 var http = require('http');
+require('dotenv').config()
 
 export default function IpSearch(props) {
 
