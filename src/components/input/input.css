@@ -28,3 +28,8 @@
     background-color: hsl(0, 0%, 59%);
     cursor: pointer;
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 550px) {
+    .ipInput{
+        width: auto;
+    }
+}
