@@ -4,7 +4,7 @@
     text-align: left;
     background-color: violet;
     height: 17vh;
-    border-radius: 1em;
+    border-radius: 0.7em;
     background-color: white;
     color: hsl(0, 0%, 17%);
     position: absolute;
@@ -12,8 +12,7 @@
     left:50%;
     transform: translateX(-50%,-50%); 
      -webkit-transform: translate(-50%,-50%);
-     /* transform: translateY(-50%); 
-     -webkit-transform: translateY(-50%); */
+    min-width: 70vw;
 }
 .info{
     
@@ -28,5 +27,6 @@
 font-size: 10px;
 }
 .infoValue{
-font-size: 2em;
+font-size: 1.5em;
+font-weight: 500;
 }

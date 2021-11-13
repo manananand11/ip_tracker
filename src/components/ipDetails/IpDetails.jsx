@@ -6,7 +6,7 @@ export default function IpDetails() {
         <div className="ipDetailsContainer">
             <div className="info right-border">
                 <p className="infoTitle">IP ADDRESS</p>
-                <p className="infoValue">random</p>
+                <p className="infoValue">192.212.143.123</p>
             </div>
             <div className="info right-border">
                 <p className="infoTitle">LOCATION</p>
