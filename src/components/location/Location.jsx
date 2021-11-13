@@ -28,7 +28,7 @@ export default function Location(props) {
                 <Fly />
                 <Marker position={latlong}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                       {props.searchIpDetails.location.region}
                     </Popup>
                 </Marker>
             </MapContainer>
