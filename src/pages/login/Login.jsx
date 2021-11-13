@@ -5,7 +5,7 @@ import Sawo from 'sawo'
 // dotenv.config()
 
 const Login = (props) => {
-    console.log("api" + process.env.SAWO_API)
+   
     useEffect(() => {
         var config = {
             // should be same as the id of the container created on 3rd step

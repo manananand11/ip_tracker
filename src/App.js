@@ -3,7 +3,7 @@ import Dashboard from './pages/dashboard/Dashboard'
 import {useState} from 'react'
 function App() {
 
-  const [isLoggedIn, setIsLoggedIn]= useState(false)
+  const [isLoggedIn, setIsLoggedIn]= useState(true)
 
   return (
     <div className="appContainer">
