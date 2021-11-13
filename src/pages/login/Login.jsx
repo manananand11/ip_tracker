@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Sawo from 'sawo'
 
-const Login = () => {
+const Login = (props) => {
     useEffect(() => {
         var config = {
             // should be same as the id of the container created on 3rd step
@@ -13,6 +13,8 @@ const Login = () => {
             // Add a callback here to handle the payload sent by sdk
             onSuccess: payload => {
                 // you can use this payload for your purpose
+                console.log(payload)
+                props.setIsLoggedIn(true);
             },
         }
         let sawo = new Sawo(config)

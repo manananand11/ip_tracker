@@ -1,6 +1,7 @@
 import "./dashboard.css"
 import Input from '../../components/input/Input'
 import Location from "../../components/location/Location"
+import IpDetails from "../../components/ipDetails/IpDetails"
 
 export default function Dashboard() {
     return (
@@ -10,7 +11,7 @@ export default function Dashboard() {
             <Input />
             </div>
             <div className="dashboardMiddle">
-
+            <IpDetails />
             </div>
             <div className="dashboardBottom">
             <Location />

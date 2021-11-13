@@ -13,6 +13,10 @@
     flex-direction: column;
     
 }
+.dashboardMiddle{
+    align-items: center;
+    text-align: center;
+}
 .dashboardHeading{
     color: white;
     text-align: center;
