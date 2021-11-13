@@ -1,7 +1,7 @@
 
 import IpDetails from '../ipDetails/IpDetails'
 import './ipSearch.css'
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 var http = require('http');
 
 export default function IpSearch(props) {
@@ -14,16 +14,25 @@ export default function IpSearch(props) {
     var api_url = 'https://geo.ipify.org/api/v1?';
 
     var url = api_url + 'apiKey=' + api_key + '&ipAddress=' + ip;
-
+    // getDetails();
+    useEffect(() =>{
     http.get(url, function (response) {
         var str = '';
         response.on('data', function (chunk) { str += chunk; });
-        response.on('end', function () { console.log(str); });
-        setIpDetails(str);
-    }).end();
+        response.on('end', function () { 
+            var string =JSON.parse(str);
+            setIpDetails(string); 
+            console.log("lol" +ipDetails) 
+        });
+        
+         console.log("start" +ipDetails + " end")
+    }).end();},[props.inputIp]);
     return (
         <div>
-            <IpDetails ipDetails={ipDetails}/>
+            {ipDetails ? <IpDetails ipDetails={ipDetails}/> : <IpDetails loading={loading}/>   }
+
+           
+
         </div>
     )
 }
