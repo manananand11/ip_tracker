@@ -1,9 +1,14 @@
 import Login from './pages/login/Login'
 import Dashboard from './pages/dashboard/Dashboard'
+import {useState} from 'react'
 function App() {
+
+  const [isLoggedIn, setIsLoggedIn]= useState(false)
+
   return (
-    <div>
-     <Dashboard />
+    <div className="appContainer">
+      {!isLoggedIn && <Login />}
+      {isLoggedIn && <Dashboard />}
     </div>
   );
 }
