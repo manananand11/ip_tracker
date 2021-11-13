@@ -1,7 +1,7 @@
 import "./dashboard.css"
 import Input from '../../components/input/Input'
 import Location from "../../components/location/Location"
-import IpDetails from "../../components/ipDetails/IpDetails"
+
 import IpSearch from "../../components/ipSearch/IpSearch";
 import React, { useState } from 'react';
 
