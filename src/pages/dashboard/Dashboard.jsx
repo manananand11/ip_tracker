@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 export default function Dashboard() {
 
     const [inputIp, setInputIp] = useState('');
-    
+    const [searchIpDetails, setSearchIpDetails] = useState('');
 
     return (
         <div className="dashboardContainer">
@@ -17,10 +17,10 @@ export default function Dashboard() {
                 <Input setInputIp={setInputIp} />
             </div>
             <div className="dashboardMiddle">
-                <IpSearch inputIp={inputIp}/>
+                <IpSearch inputIp={inputIp} setSearchIpDetails={setSearchIpDetails} />
             </div>
             <div className="dashboardBottom">
-                <Location />
+                {searchIpDetails && <Location searchIpDetails={searchIpDetails} />}
             </div>
 
         </div>

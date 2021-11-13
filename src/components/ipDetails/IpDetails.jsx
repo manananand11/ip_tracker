@@ -5,7 +5,7 @@ export default function IpDetails(props) {
     console.log("props " + props.ipDetails?.ip)
     // console.log(props.ipDetails + "idk") ;
     return (
-        
+
         props.ipDetails ? (
             <div className="ipDetailsContainer">
                 <div className="info right-border">
@@ -25,9 +25,9 @@ export default function IpDetails(props) {
                     <p className="infoValue">{props.ipDetails?.isp}</p>
                 </div>
             </div>
-        ):
-        <div className="ipDetailsContainer">
-        <div className="loadingContainer">{props.loading}</div>
-        </div>
+        ) :
+            <div className="ipDetailsContainer">
+                <div className="loadingContainer">{props.loading}</div>
+            </div>
     )
 }
